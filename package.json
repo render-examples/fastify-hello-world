@@ -1,0 +1,25 @@
+{
+  "name": "fastify-hello-world",
+  "version": "1.0.0",
+  "description": "A Fastify example to deploy to Render",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/render-examples/fastify-hello-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/render-examples/fastify-hello-world/issues"
+  },
+  "homepage": "https://github.com/render-examples/fastify-hello-world#readme",
+  "dependencies": {
+    "fastify": "^4.17.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

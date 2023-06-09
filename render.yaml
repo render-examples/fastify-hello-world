@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: fastify-hello-world-example
+    runtime: node
+    plan: free
+    autoDeploy: false
+    buildCommand: npm install
+    startCommand: node app.js
