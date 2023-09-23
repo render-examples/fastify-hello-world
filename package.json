@@ -4,7 +4,7 @@
   "description": "A Fastify example to deploy to Render",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,18 @@
   },
   "homepage": "https://github.com/render-examples/fastify-hello-world#readme",
   "dependencies": {
-    "fastify": "^4.17.0"
+    "@prisma/client": "^5.3.1",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.17.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
   },
   "engines": {
     "node": "18.x"
+  },
+  "devDependencies": {
+    "@fastify/cors": "^8.4.0",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.3.1"
   }
 }
