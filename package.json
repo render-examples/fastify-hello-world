@@ -2,9 +2,9 @@
   "name": "fastify-hello-world",
   "version": "1.0.0",
   "description": "A Fastify example to deploy to Render",
-  "main": "server.ts",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/server.ts"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
