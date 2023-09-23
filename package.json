@@ -4,7 +4,7 @@
   "description": "A Fastify example to deploy to Render",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "tsx watch src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,11 @@
   },
   "engines": {
     "node": "18.x"
+  },
+  "devDependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@types/node": "^20.6.3",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2"
   }
 }
