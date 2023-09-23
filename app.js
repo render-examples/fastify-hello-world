@@ -18,7 +18,7 @@ app.listen(
     host,
     port,
   },
-  (err: any, _address: any) => {
+  (err, _address) => {
     if (err) {
       app.log.error(err);
       process.exit(1);
