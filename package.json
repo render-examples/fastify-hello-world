@@ -2,7 +2,7 @@
   "name": "fastify-hello-world",
   "version": "1.0.0",
   "description": "A Fastify example to deploy to Render",
-  "main": "app.js",
+  "main": "server.ts",
   "scripts": {
     "start": "tsx watch src/server.ts"
   },
