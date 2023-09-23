@@ -1,11 +1,11 @@
-import fastifyCors from "@fastify/cors";
-import { fastify } from "fastify";
-import { helloRoute } from "./routes/hello";
+const fastifyCors = require("@fastify/cors");
+const app = require("fastify")({
+  logger: true,
+});
+const helloRoute = require("./routes/hello");
 
 const port = parseInt(process.env.PORT!) || 3000;
 const host = "RENDER" in process.env ? `0.0.0.0` : `localhost`;
-
-const app = fastify({ logger: true });
 
 app.register(fastifyCors, {
   origin: "*",
@@ -18,7 +18,7 @@ app.listen(
     host,
     port,
   },
-  (err, address) => {
+  (err: any, _address: any) => {
     if (err) {
       app.log.error(err);
       process.exit(1);
