@@ -4,7 +4,7 @@
   "description": "A Fastify example to deploy to Render",
   "main": "server.ts",
   "scripts": {
-    "start": "tsx watch src/server.ts"
+    "start": "tsx watch server.ts"
   },
   "repository": {
     "type": "git",
