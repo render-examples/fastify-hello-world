@@ -2,9 +2,10 @@
   "name": "fastify-hello-world",
   "version": "1.0.0",
   "description": "A Fastify example to deploy to Render",
-  "main": "app.js",
+  "main": "app.ts",
+  "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "tsx watch app.ts"
   },
   "repository": {
     "type": "git",
@@ -17,18 +18,24 @@
   },
   "homepage": "https://github.com/render-examples/fastify-hello-world#readme",
   "dependencies": {
+    "@fastify/jwt": "^7.2.1",
     "@prisma/client": "^5.3.1",
     "dotenv": "^16.3.1",
     "fastify": "^4.17.0",
     "jsonwebtoken": "^9.0.2",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "zod": "^3.22.2"
   },
   "engines": {
     "node": "18.x"
   },
   "devDependencies": {
     "@fastify/cors": "^8.4.0",
-    "nodemon": "^3.0.1",
-    "prisma": "^5.3.1"
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/node": "^20.6.3",
+    "prisma": "^5.3.1",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2"
   }
 }
