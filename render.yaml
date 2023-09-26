@@ -1,8 +1,11 @@
+previewsEnabled: true
+previewsExpireAfterDays: 1
 services:
   - type: web
     name: fastify-hello-world-example
     runtime: node
-    plan: free
-    autoDeploy: false
+    plan: starter
+    autoDeploy: true
     buildCommand: npm install
     startCommand: node app.js
+
